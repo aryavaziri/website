@@ -12,25 +12,40 @@ function App() {
     user: { name: '', email: '' },
     theme: false,
     language: 'en',
-    title: 'Welcome'
+    title: 'Welcome',
+    cursorh: false,
   })
-  // useEffect(() => {
-  //   document.title = myContext.title
-  // }, [myContext]);
+  useEffect(() => {
+    document.title = myContext.title
+  }, [myContext]);
+
+  const pointer = (e) => {
+    let x = e.clientX
+    let y = e.clientY
+    document.getElementById("pointer").style.left = (x - 24) + "px"
+    document.getElementById("pointer").style.top = (y - 24) + "px"
+  }
 
 
   return (
     <Context.Provider value={[myContext, setMyContext]}>
       <Router>
-        <Header />
-        <main className={`${myContext.theme ? `text-slate-800 bg-slate-200` : `text-slate-100 bg-slate-700`} min-h-screen `}>
-          <Routes>
-            <Route exact path="/" element={<HomeScreen />} />
-            <Route exact path="/projects/" element={<ProjectScreen />} />
-            <Route exact path="/about/" element={<AboutScreen />} />
-            <Route exact path="/contact/" element={<ContactScreen />} />
-          </Routes>
-        </main>
+        <div onMouseMove={(e) => pointer(e)} className={`${myContext.theme ? `text-slate-900` : `text-c1`} h-screen`} >
+
+          <div id="pointer" className={`${myContext.cursorh ? `cursor-hover` : ``} rounded-full bg-rose-500 h-12 w-12 absolute custom-pointer`} />
+          <Header />
+          <main className={`${myContext.theme ? `text-slate-800 bg-c1` : `text-c1 bg-slate-700`} absolute top-0 left-0 right-0 z-20 min-h-screen `}>
+            <div className={``}>
+              {/* <div className={` duration-500 ${myContext.menu ? 'opacity-0 timing-linear' : 'opacity-100 delay-1500'}`}> */}
+              <Routes>
+                <Route exact path="/" element={<HomeScreen />} />
+                <Route exact path="/projects/" element={<ProjectScreen />} />
+                <Route exact path="/about/" element={<AboutScreen />} />
+                <Route exact path="/contact/" element={<ContactScreen />} />
+              </Routes>
+            </div>
+          </main>
+        </div>
       </Router>
     </Context.Provider>
   );
