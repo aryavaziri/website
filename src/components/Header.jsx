@@ -61,22 +61,23 @@ function Header() {
                 </div>
                 <div className={`w-full px-12 md:px-32 lg:px-52 menu-list mt-8 duration-500 overflow-hidden`}>
                     <ul className='w-full'>
-                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Welcome") ? "text-orange-600" : ""}  font-extrabold`}>
+                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Welcome") ? "text-orange-400" : ""}  font-extrabold`}>
                             <Link className={`${myContext.menu ? "delay-400" : "delay-300"} `} to={`/`}>
                                 HOME
                             </Link>
                         </li>
-                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Projects") ? "text-orange-600" : ""}  font-extrabold`}>
-                            <Link className={`${myContext.menu ? "delay-500" : "delay-200"} `} to={`/projects`}>
+                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Projects") ? "text-orange-400" : ""}  font-extrabold`}>
+                            <Link
+                                className={`${myContext.menu ? "delay-500" : "delay-200"} `} to={`/projects`}>
                                 PROJECTS
                             </Link>
                         </li>
-                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "About") ? "text-orange-600" : ""}  font-extrabold`}>
+                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "About") ? "text-orange-400" : ""}  font-extrabold`}>
                             <Link className={`${myContext.menu ? "delay-600" : "delay-100"} `} to={`/about`}>
                                 ABOUT
                             </Link>
                         </li>
-                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Contact") ? "text-orange-600" : ""}  font-extrabold`}>
+                        <li onClick={() => menuHandler()} className={`text-5xl md:text-6xl ${myContext.menu ? "menu-item-show my-6" : "my-0"} ${(myContext.title === "Contact") ? "text-orange-400" : ""}  font-extrabold`}>
                             <Link className={`${myContext.menu ? "delay-700" : ""} `} to={`/contact`}>
                                 CONTACT
                             </Link>

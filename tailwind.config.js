@@ -8,12 +8,26 @@ module.exports = {
       'lg': '1440px',
     },
     extend: {
+      boxShadow: {
+        'arya': '0 0 15px -5px',
+      },
       aspectRatio: {
         '1/2': '1 / 2',
       },
       minWidth: {
         '50vh': '50vh',
         '37vh': '38vh',
+        '50vw': '50vw'
+      },
+      maxWidth: {
+        '50vh': '50vh',
+        '37vh': '38vh',
+        '50vw': '50vw',
+        '75vh': '75vh',
+      },
+      maxHeight: {
+        '50vh': '50vh',
+        '75vh': '75vh',
       },
       colors: {
         'c1': '#aac8c8'

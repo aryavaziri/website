@@ -11,7 +11,8 @@ body::-webkit-scrollbar {
     /* for Chrome, Safari, and Opera */
 }
 
-.bg-gradient::-webkit-scrollbar {
+.bg-gradient::-webkit-scrollbar,
+.bg-gradient2::-webkit-scrollbar {
     width: 0;
 }
 
@@ -27,12 +28,28 @@ body::-webkit-scrollbar {
 }
 
 .bg-gradient2 {
+    background-color: transparent;
+    /* Adjust the color to match the background */
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    /* Clip the bottom part */
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    height: calc(100vh - 6rem);
+}
+
+.bg-gradient3 {
     background-color: white;
     mix-blend-mode: saturation;
     /* background: linear-gradient(180deg, #aac8c8 0%, #aac8c8 80%, #aac8c800 100%); */
     /* background: linear-gradient(180deg, #374151 0%, #c5cad2 80%, #37415100 100%); */
     z-index: 2;
 }
+
+.inverted {
+    -webkit-backdrop-filter: invert(80%);
+}
+
 
 .font-custom1,
 .font-custom1 * {
@@ -118,7 +135,6 @@ body::-webkit-scrollbar {
 }
 
 .menu>div:nth-of-type(5) {
-    /* opacity: 0; */
     backdrop-filter: invert(100%);
 }
 

@@ -36,7 +36,6 @@ function App() {
           <Header />
           <main className={`${myContext.theme ? `text-slate-800 bg-c1` : `text-c1 bg-slate-700`} absolute top-0 left-0 right-0 z-20 min-h-screen `}>
             <div className={``}>
-              {/* <div className={` duration-500 ${myContext.menu ? 'opacity-0 timing-linear' : 'opacity-100 delay-1500'}`}> */}
               <Routes>
                 <Route exact path="/" element={<HomeScreen />} />
                 <Route exact path="/projects/" element={<ProjectScreen />} />
