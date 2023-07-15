@@ -46,17 +46,38 @@ body::-webkit-scrollbar {
     z-index: 2;
 }
 
-.btn-3:hover>svg.btnic {
-    padding-left: 0 !important;
+.project-item:hover .right {
+    opacity: 1;
+    font-weight: 700;
+    font-size: 28px;
+}
+.project-item .right {
+    opacity: 0.6;
 }
 
-.btn-3>svg.btnic {
-    padding-left: -50% !important;
+.project-item:hover .left>div:nth-of-type(1) {
+    /* margin-left: 0; */
+    
+}
+.project-item .left>div:nth-of-type(1) {
+    /* margin-left: -30%; */
 }
 
-.btn-3 {
+.project-item:hover {
+    opacity: 1;
+}
+.project-item {
+    opacity: 0.6;
     overflow: hidden;
+    position: relative;
 }
+.project-item .ic {
+    margin-left: -100%;
+}
+.project-item:hover .ic {
+    margin-left: -30%;
+}
+
 
 .inverted {
     -webkit-backdrop-filter: invert(80%);
