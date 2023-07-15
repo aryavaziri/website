@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body,
+body>*,
+body * {
     scrollbar-width: none;
 }
 
@@ -11,6 +13,7 @@ body::-webkit-scrollbar {
     /* for Chrome, Safari, and Opera */
 }
 
+.noscroll-bar::-webkit-scrollbar,
 .bg-gradient::-webkit-scrollbar,
 .bg-gradient2::-webkit-scrollbar {
     width: 0;
@@ -51,29 +54,25 @@ body::-webkit-scrollbar {
     font-weight: 700;
     font-size: 28px;
 }
+
 .project-item .right {
     opacity: 0.6;
-}
-
-.project-item:hover .left>div:nth-of-type(1) {
-    /* margin-left: 0; */
-    
-}
-.project-item .left>div:nth-of-type(1) {
-    /* margin-left: -30%; */
 }
 
 .project-item:hover {
     opacity: 1;
 }
+
 .project-item {
     opacity: 0.6;
     overflow: hidden;
     position: relative;
 }
+
 .project-item .ic {
     margin-left: -100%;
 }
+
 .project-item:hover .ic {
     margin-left: -30%;
 }
@@ -99,7 +98,7 @@ body::-webkit-scrollbar {
     box-sizing: border-box !important;
     padding: 0;
     margin: 0;
-    transition: 0.2s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
 
@@ -206,13 +205,11 @@ body::-webkit-scrollbar {
 }
 
 .menu:hover .menu-hover:nth-of-type(10) {
-    transition: 0.2s;
     width: 28px;
     left: 0;
 }
 
 .menu:hover .menu-hover:nth-of-type(11) {
-    transition: 0.2s;
     height: 28px;
     top: 0;
 }

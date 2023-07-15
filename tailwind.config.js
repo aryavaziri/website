@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     screens: {
       'sm': '450px',
-      'md': '960px',
-      'lg': '1440px',
+      'md': '899px',
     },
     extend: {
       boxShadow: {
