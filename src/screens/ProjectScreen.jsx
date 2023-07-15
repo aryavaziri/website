@@ -4,6 +4,23 @@ import { Link } from "react-router-dom";
 import { BsTelephone } from "react-icons/bs";
 import { BiChevronRight } from "react-icons/bi";
 
+
+
+
+const ProjectItem = ({item}) => {
+    const [myContext, setMyContext] = useContext(Context);
+
+    return (
+        <div className='flex items-center justify-between pr-8 border-b py-2 hover:pl-10 project-item'>
+        <div className='text-4xl flex left'>
+            <div className='w-10 overflow-hidden flex items-center' ><BiChevronRight className='ic' /></div>
+            <div>{item.title}</div>
+        </div>
+        <div className='text-2xl right'>{item.dev}</div>
+    </div>
+    )
+}
+
 function ProjectScreen() {
     const [myContext, setMyContext] = useContext(Context);
     useEffect(() => {
@@ -16,21 +33,17 @@ function ProjectScreen() {
                 Projects
             </h1>
             <div className={`absolute flex bottom-0 left-0 pl-4 sm:pl-10 md:pl-40 h-full max-sm:pt-20 sm:max-h-75vh md:max-h-[65vh] w-full`}>
-                <div className=' flex-auto p-4 '>
-                    <div className='flex items-center justify-between px-4 border-b py-2 hover:pl-10'>
-                        <div className='text-4xl flex btn-3'>
-                            <div className='btnic' ><BiChevronRight /></div>
-
-                            <div>REFRAME</div>
-                        </div>
-                        <div className='text-2xl'>VR</div>
-                    </div>
-                    <div className='flex items-center justify-between px-4 border-b py-2 hover:pl-10'>
-                        <div className='text-4xl'>REFRAME</div>
-                        <div className='text-2xl'>VR</div>
-                    </div>
+                <div className=' flex-auto p-4 overflow-auto '>
+                    <ProjectItem item={{title: "CASINO ONLINE", dev: "Django / React"}} />
+                    <ProjectItem item={{title: "REFRAME", dev: "Unity / VR"}} />
+                    <ProjectItem item={{title: "TETRIS", dev: "p5js"}} />
+                    <ProjectItem item={{title: "2048", dev: "Javascript"}} />
+                    <ProjectItem item={{title: "GOOD BLOCKS", dev: "React"}} />
+                    <ProjectItem item={{title: "TODO", dev: "Firebase / React"}} />
                 </div>
+
                 <div className={`max-sm:hidden aspect-square h-full max-w-75vh border`}>
+                    <img src="" alt="" />
                 </div>
             </div>
 
