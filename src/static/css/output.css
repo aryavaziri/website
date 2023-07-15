@@ -1265,6 +1265,18 @@ body::-webkit-scrollbar {
   z-index: 2;
 }
 
+.btn-3:hover>svg.btnic {
+  margin-left: 0 !important;
+}
+
+.btn-3 .btnic {
+  margin-left: -50% !important;
+}
+
+.btn-3 {
+  overflow: hidden;
+}
+
 .inverted {
   -webkit-backdrop-filter: invert(80%);
 }

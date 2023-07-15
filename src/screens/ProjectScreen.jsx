@@ -18,8 +18,9 @@ function ProjectScreen() {
             <div className={`absolute flex bottom-0 left-0 pl-4 sm:pl-10 md:pl-40 h-full max-sm:pt-20 sm:max-h-75vh md:max-h-[65vh] w-full`}>
                 <div className=' flex-auto p-4 '>
                     <div className='flex items-center justify-between px-4 border-b py-2 hover:pl-10'>
-                        <div className='text-4xl flex'>
-                            <BiChevronRight />
+                        <div className='text-4xl flex btn-3'>
+                            <div className='btnic' ><BiChevronRight /></div>
+
                             <div>REFRAME</div>
                         </div>
                         <div className='text-2xl'>VR</div>
