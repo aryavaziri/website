@@ -57,13 +57,13 @@ function Reframe() {
             </div>
 
             <div className='sm:flex w-full sm:w-1/2 gap-4 mx-auto text-3xl justify-evenly'>
-            <Link className="btn-primary bg-vr1">
-                    <BsForward className='' />
-                    <div>Next Project</div>
-                </Link>
                 <Link className="btn-primary bg-vr1">
                     <BsSkipStart />
                     <div>Back</div>
+                </Link>
+                <Link className="btn-primary bg-vr1">
+                    <BsForward className='' />
+                    <div>Next Project</div>
                 </Link>
 
             </div>
