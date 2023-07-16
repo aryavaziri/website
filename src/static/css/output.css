@@ -873,6 +873,10 @@ video {
   width: 100vw;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .min-w-50vh {
   min-width: 50vh;
 }
@@ -1964,6 +1968,10 @@ body::-webkit-scrollbar {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:rounded-bl-3xl {

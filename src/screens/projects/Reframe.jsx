@@ -56,10 +56,10 @@ function Reframe() {
                     controls />
             </div>
 
-            <div className='sm:flex w-full sm:w-1/2 gap-4 mx-auto text-3xl justify-evenly'>
+            <div className='sm:flex-row flex-col flex w-full sm:w-1/2 gap-4 mx-auto text-3xl justify-evenly'>
                 <Link className="btn-primary bg-vr1">
-                    <BsSkipStart />
-                    <div>Back222</div>
+                    <BsSkipStart className='w-6'/>
+                    <div>Back</div>
                 </Link>
                 <Link className="btn-primary bg-vr1">
                     <BsForward className='' />
