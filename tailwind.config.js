@@ -33,6 +33,8 @@ module.exports = {
         'c1': '#aac8c8',
         'vr1': '#e1ff29',
         'vr2': '#1e3c33',
+        'poker': '#e21035',
+        'poker2': '#ff6a85',
       },
       spacing: {
         '0.25': '0.075rem',

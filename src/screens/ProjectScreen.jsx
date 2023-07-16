@@ -3,6 +3,9 @@ import { Context } from '../App'
 import { Link } from "react-router-dom";
 import { BsTelephone } from "react-icons/bs";
 import { BiChevronRight } from "react-icons/bi";
+import IMG1 from "../static/img/projects/Casinoa.jpg";
+import IMG2 from "../static/img/projects/ReframePost.png";
+
 import PRG1 from "../static/img/projects/test1.jpg"
 import PRG2 from "../static/img/projects/test2.jpg"
 import PRG3 from "../static/img/projects/test3.jpg"
@@ -82,11 +85,12 @@ function ProjectScreen() {
                     />
                 </div>
 
+
                 <div className={`max-sm:hidden h-full overflow-hidden relative rounded-tl-[100px] `}>
+                    <ProjectIMG hoveredItem={hoveredItem} src={IMG1} item={{ title: "CASINO ONLINE"}} />
+                    <ProjectIMG hoveredItem={hoveredItem} src={IMG2} item={{ title: "REFRAME"}} />
                     <ProjectIMG hoveredItem={hoveredItem} src={PRG1} item={{ title: "TODO"}} />
-                    <ProjectIMG hoveredItem={hoveredItem} src={PRG2} item={{ title: "REFRAME"}} />
                     <ProjectIMG hoveredItem={hoveredItem} src={PRG3} item={{ title: "2048"}} />
-                    <ProjectIMG hoveredItem={hoveredItem} src={PRG4} item={{ title: "CASINO ONLINE"}} />
                     <ProjectIMG hoveredItem={hoveredItem} src={PRG5} item={{ title: "GOOD BLOCKS"}} />
                     <ProjectIMG hoveredItem={hoveredItem} src={PRG4} item={{ title: "TETRIS"}} />
                 </div>

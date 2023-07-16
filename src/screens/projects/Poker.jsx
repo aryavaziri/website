@@ -1,10 +1,11 @@
-import React, { useState, useContext, useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Context } from '../../App'
+import IMG1 from "../../static/img/projects/Casinoa.jpg";
 import { Link } from "react-router-dom";
-import { BsTelephone } from "react-icons/bs";
-import IMG1 from "../../static/img/projects/reframe/ReframePost.png";
-import Noise from "../../static/img/noise.png";
-import Demo from "../../static/reframe.mp4";
+import { BsForward } from "react-icons/bs";
+import { BsSkipStart } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { ImNewTab } from "react-icons/im";
 
 function Poker() {
     const [myContext, setMyContext] = useContext(Context);
@@ -14,44 +15,72 @@ function Poker() {
     return (
         <div
             // style={{backgroundImage: `url(${Noise}`, opacity: "40%"}}
-            className={`${myContext.theme ? `border-vr2 text-vr2 bg-vr` : `border-vr1 text-slate-200 bg-vr`} relative w-screen font-custom2 px-4 sm:px-24 md:px-40 pb-12 duration-500 overflow-hidden ${(myContext.menu || myContext.title !== 'Poker') ? "mt--2 opacity-0" : " delay-300"}`} >
-            <div className='rounded-b-[50px] overflow-hidden'>
-                <img className='object-contain w-full' src={IMG1} alt="" />
+            className={`${myContext.theme ? `border-vr2 text-vr2 bg-vr` : `border-vr1 text-slate-200 bg-vr`} relative w-screen font-custom2 px-4 sm:px-24 md:px-40 pb-12 duration-500 text-lg overflow-hidden ${(myContext.menu || myContext.title !== 'Poker') ? "mt--2 opacity-0" : " delay-300"}`} >
+            <div className='rounded-b-[50px] overflow-hidden h-[50vh]'>
+                <img className='object-cover w-full h-full' src={IMG1} alt="" />
             </div>
 
-            <h1 className={`${myContext.theme ? `text-vr2` : `text-vr1`} px-4 pt-10 pb-2 w-full text-4xl sm:text-6xl font-bold border-inherit text-shadow border-b-2 `}>
-                Poker, A Travelling Art Piece
+            <h1 className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} px-4 pt-10 pb-2 w-full text-4xl sm:text-6xl font-bold border-b-2 `}>
+                CASINOA, Online poker game
             </h1>
             <div className='sm:flex justify-between my-6'>
                 <div className='basis-1/3 flex flex-col gap-2 p-2'>
                     <div className='flex gap-2 items-baseline'>
-                        <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} w-24 text-right text-xl`} >Client:</div>
-                        <div>Civic Interaction Design</div>
+                        <div className={`${myContext.theme ? `text-vr2` : `text-poker`} w-24 font-bold text-right text-xl`}>Techsnologies:</div>
+                        <div>Django / Python / React / Postgresql / NGINX / Redis / Redux / Docker </div>
                     </div>
                     <div className='flex gap-2 items-baseline'>
-                        <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} w-24 text-right text-xl`}>Techsnologies:</div>
-                        <div>C#/UNITY, 3D, VR</div>
-                    </div>
-                    <div className='flex gap-2 items-baseline'>
-                        <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} w-24 text-right text-xl`}>Date:</div>
-                        <div>Nov - Dec 2022</div>
+                        <div className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} w-24 font-bold text-right text-xl`}>Date:</div>
+                        <div>Nov 2022 - Jun 2023</div>
                     </div>
                 </div>
-                <div className='basis-2/3 p-2 text-justify'>Poker is a VR experience that focuses on the Dutch occupation of Brazil (1630-1654). It's a poly-narrative that sheds light on those hidden voices and untold stories. But it does more; it makes us aware of our biases and blind spots by raising an interesting question: Might the same institutional biases we 'accuse' museums of still be present in some unforeseen way, neatly hidden in the systems, frameworks, and technology we use – and if so, can Poker address that problem too?</div>
+                <div className='basis-2/3 p-2 font-[500] text-2xl'>Casinoa, is a dynamic and interactive platform built using Django and React. The project leverages the Django framework on the server-side, handling the game logic, database management, and user authentication. React, on the other hand, powers the dynamic frontend, delivering a seamless and responsive user interface. </div>
             </div>
-            <div>
-                <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} text-2xl p-2`} >Design Proposal</div>
-                <p className='text-justify'>In the VR experience, users will find themselves in front of View of Itamaracá Island, Brazil (1637) by Frans Post, where they will be able to interact with some elements of the painting. They hear a different story than the idyllic one created by the Dutch painter. A lot is not being told by him. Poker fills this hiatus. <br /> It confronts users with a different narrative. While interacting with the painting, users hear voice recordings of Brazilians with different backgrounds who describe what they see when they look at the painting. These personal stories are added to engage the user, unlock multiple perspectives, and to get across how colonization is still affecting many lives nowadays. It does so in a 'strange loop' kind of way as well. <br /> In the same room, nine AI-generated paintings show how deeply rooted colonialism and racism still are in today's society and system. This new technology that's being developed is built on existing frameworks. It learns from the data we've fed the system. History forms its own datasets. To tell different stories, we need different data. <br /> <br />At the end of the experience, users will be asked to share their experiences related to colonialism and racism. By collecting these stories, new data is being gathered. This way, the experience will grow over time. With the current explosion of generative AI-design tools in mind, this might prove to be the most important part of the experience. For it's one thing to prompt AI to 'create a painting in the style of Frans Post', but another to unlock these hidden stories. <br /> <br /> </p>
+            <div className='my-12'>
+                <div className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} border-b-2 text-3xl p-2 font-bold mb-6`} >Concept</div>
+                <p className='text-justify'>The backend of the application is powered by Django, a Python-based framework known for its robustness and versatility. Django offers a convenient solution for implementing AI bots and managing the underlying database, making it an ideal choice for creating a platform that can support the development of an AI player.<br />While the AI player development is still in progress, the current iteration of the Poker Web Application offers an exciting multiplayer experience with virtual currency. Users can create personalized accounts, participate in multiplayer games, and compete against friends or other players online.<br />By providing a platform for multiplayer gameplay, this project allows players to engage in exciting poker matches using virtual money. This multiplayer functionality serves as a foundation for gathering valuable data, which will be instrumental in refining the AI player's strategy and improving its performance over time.</p>
             </div>
-            <div>
-                <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} text-2xl p-2`}>Unity</div>
-                <p className='text-justify'> As a developer in the Poker VR project, my primary role was to create the immersive experience using Unity. I faced various challenges throughout the development process, such as implementing locomotion techniques suitable for VR and ensuring the experience was user-friendly for our target audience, who were not necessarily familiar with gaming or technology.<br />Using my expertise in C#, I integrated a feedback recording system to allow users to share their experiences related to colonialism and racism. This functionality enabled us to collect valuable user data, which would contribute to the growth and evolution of the experience over time.<br />To enhance the immersive nature of the VR experience, I utilized 3D audio techniques and incorporated an audio player with a playlist for each section of the project. This allowed users to engage with the narrative and personal stories from different perspectives, creating a more impactful and meaningful experience.<br /> <br /> </p>
+            <div className='my-8'>
+                <div className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} border-b-2 text-3xl p-2 font-bold `} >Key Features</div>
+                <ul className='mt-4 sm:pt-16 gap-4 flex flex-col'>
+                    <li className='w-full flex flex-col sm:flex-row items-baseline'>
+                        <div className={`w-full sm:w-1/4 sm:text-end px-4 text-2xl font-semibold ${myContext.theme ? `text-vr2 border-poker` : `text-poker`}`}>JSON Web Token</div>
+                        <div className='w-full sm:w-3/4 justify'>provide a secure and password-free authentication method for apps. With JWT, sensitive user credentials are never stored, reducing the risk of data breaches. Tokens contain encrypted authentication data, eliminating the need for frequent database queries. JWT ensures secure access to protected resources and improves app scalability.</div>
+                    </li>
+                    <li className='w-full flex flex-col sm:flex-row items-baseline'>
+                        <div className={`w-full sm:w-1/4 sm:text-end px-4 text-2xl font-semibold ${myContext.theme ? `text-vr2 border-poker` : `text-poker`}`}>Docker</div>
+                        <div className='w-full sm:w-3/4 justify'>Using Docker to containerize your app has numerous advantages. It enables easy and quick installation on servers, making deployment faster. With one line of code, anyone can install the open-source application on their server. Docker ensures consistent environments, promotes development conventions, and simplifies scaling.</div>
+                    </li>
+                    <li className='w-full flex flex-col sm:flex-row items-baseline'>
+                        <div className={`w-full sm:w-1/4 sm:text-end px-4 text-2xl font-semibold ${myContext.theme ? `text-vr2 border-poker` : `text-poker`}`}>Redux</div>
+                        <div className='w-full sm:w-3/4 justify'>By combining Redux with React, you have achieved a scalable, fast, and well-structured application. Redux reduces server pressure, optimizes resource usage, and provides a predictable state management approach. This combination enhances performance, facilitates code organization, and promotes code reusability.</div>
+                    </li>
+                    <li className='w-full flex flex-col sm:flex-row items-baseline'>
+                        <div className={`w-full sm:w-1/4 sm:text-end px-4 text-2xl font-semibold ${myContext.theme ? `text-vr2 border-poker` : `text-poker`}`}>Web-Sockets</div>
+                        <div className='w-full sm:w-3/4 justify'>By using Django Channels and Redis, your multiplayer game application benefits from real-time communication through websockets. Players can engage in a live chatroom and receive updates from the PostgreSQL database.</div>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <div className={`${myContext.theme ? `text-vr2` : `text-vr1`} text-2xl p-2`}>Experience Demo</div>
-                <video className='w-full'
-                    src={Demo}
-                    controls />
+            <hr className={`${myContext.theme ? `border-vr2` : `border-poker`} border my-8`}/>
+
+            <div className='flex-wrap flex-row flex w-full sm:w-fit gap-4 mx-auto text-3xl justify-evenly'>
+                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                    <BsSkipStart className='w-8'/>
+                    <div>Back</div>
+                </Link>
+                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                    <BsGithub className='w-8'/>
+                    <div>Source Code</div>
+                </Link>
+                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                    <ImNewTab className='w-8'/>
+                    <div>Visit Project</div>
+                </Link>
+                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                    <BsForward className='w-8'/>
+                    <div>Next Project</div>
+                </Link>
+
             </div>
         </div>
     )
