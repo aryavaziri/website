@@ -14,6 +14,7 @@ module.exports = {
         '1/2': '1 / 2',
       },
       minWidth: {
+        '1/2': '50%',
         '50vh': '50vh',
         '37vh': '38vh',
         '50vw': '50vw'
@@ -29,7 +30,9 @@ module.exports = {
         '75vh': '75vh',
       },
       colors: {
-        'c1': '#aac8c8'
+        'c1': '#aac8c8',
+        'vr1': '#e1ff29',
+        'vr2': '#1e3c33',
       },
       spacing: {
         '0.25': '0.075rem',

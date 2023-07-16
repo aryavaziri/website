@@ -55,6 +55,11 @@ body::-webkit-scrollbar {
     font-size: 28px;
 }
 
+.project-item:hover .left {
+    font-size: 40px;
+    font-weight: 800;
+}
+
 .project-item .right {
     opacity: 0.6;
 }
