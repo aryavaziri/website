@@ -1188,6 +1188,11 @@ video {
   background-color: rgb(225 255 41 / var(--tw-bg-opacity));
 }
 
+.bg-vr2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 60 51 / var(--tw-bg-opacity));
+}
+
 .object-contain {
   object-fit: contain;
 }

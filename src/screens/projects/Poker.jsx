@@ -21,17 +21,17 @@ function Poker() {
             </div>
 
             <h1 className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} px-4 pt-10 pb-2 w-full text-4xl sm:text-6xl font-bold border-b-2 `}>
-                CASINOA, Online poker game
+                CASINOA, Online poker
             </h1>
             <div className='sm:flex justify-between my-6'>
                 <div className='basis-1/3 flex flex-col gap-2 p-2'>
                     <div className='flex gap-2 items-baseline'>
-                        <div className={`${myContext.theme ? `text-vr2` : `text-poker`} w-24 font-bold text-right text-xl`}>Techsnologies:</div>
-                        <div>Django / Python / React / Postgresql / NGINX / Redis / Redux / Docker </div>
+                        <div className={`${myContext.theme ? `text-vr2` : `text-poker`} w-24 font-bold text-right text-xl px-2`}>Techsnologies:</div>
+                        <div className='px-2'>Django / Python / React / Postgresql / NGINX / Redis / Redux / Docker </div>
                     </div>
                     <div className='flex gap-2 items-baseline'>
-                        <div className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} w-24 font-bold text-right text-xl`}>Date:</div>
-                        <div>Nov 2022 - Jun 2023</div>
+                        <div className={`${myContext.theme ? `text-vr2 border-vr2` : `border-poker text-poker`} w-24 font-bold text-right text-xl px-2`}>Date:</div>
+                        <div className='px-2'>Nov 2022 - Jun 2023</div>
                     </div>
                 </div>
                 <div className='basis-2/3 p-2 font-[500] text-2xl'>Casinoa, is a dynamic and interactive platform built using Django and React. The project leverages the Django framework on the server-side, handling the game logic, database management, and user authentication. React, on the other hand, powers the dynamic frontend, delivering a seamless and responsive user interface. </div>
@@ -64,21 +64,21 @@ function Poker() {
             <hr className={`${myContext.theme ? `border-vr2` : `border-poker`} border my-8`}/>
 
             <div className='flex-wrap flex-row flex w-full sm:w-fit gap-4 mx-auto text-3xl justify-evenly'>
-                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                <Link className={`btn-primary  max-sm:text-lg max-sm:w-2/5 ${myContext.theme ? `bg-vr2 text-c1` : `bg-poker2`}`}>
+                    <ImNewTab className='w-8'/>
+                    <div>Visit</div>
+                </Link>
+                <Link className={`btn-primary  max-sm:text-lg max-sm:w-2/5 ${myContext.theme ? `bg-vr2 text-c1` : `bg-poker2`}`}>
+                    <BsGithub className='w-8'/>
+                    <div>Source</div>
+                </Link>
+                <Link className={`btn-primary  max-sm:text-lg max-sm:w-2/5 ${myContext.theme ? `bg-vr2 text-c1` : `bg-poker2`}`}>
                     <BsSkipStart className='w-8'/>
                     <div>Back</div>
                 </Link>
-                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
-                    <BsGithub className='w-8'/>
-                    <div>Source Code</div>
-                </Link>
-                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
-                    <ImNewTab className='w-8'/>
-                    <div>Visit Project</div>
-                </Link>
-                <Link className="btn-primary max-sm:text-lg bg-poker2 max-sm:w-2/5">
+                <Link className={`btn-primary  max-sm:text-lg max-sm:w-2/5 ${myContext.theme ? `bg-vr2 text-c1` : `bg-poker2`}`}>
                     <BsForward className='w-8'/>
-                    <div>Next Project</div>
+                    <div>Next</div>
                 </Link>
 
             </div>
